@@ -30,9 +30,9 @@ void student::display() {
     cout << endl << rno << "\t" << name << "\t" << fee;
 }
 int main() {
-    student s(1001, "Manjeet", 10000);
+    student s(123, "SAI", 1000);
     s.display();
-    student manjeet(s);
-    manjeet.display();
+    student sai(s);
+    sai.display();
     return 0;
 }
