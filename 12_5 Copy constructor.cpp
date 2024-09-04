@@ -1,5 +1,5 @@
-//Name: Srihari Nair
-//Prn: 23070123131
+//Name: Sai Sankar JENA
+//Prn: 23070123112
 //Class: EnTC B-2
 #include<iostream>
 #include<string.h>
