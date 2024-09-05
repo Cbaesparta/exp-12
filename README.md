@@ -51,7 +51,19 @@ Certainly! Here’s a more detailed summary of constructors in C++ in bullet poi
 | **Purpose Example**   | Setting initial values, allocating resources   | Releasing resources, cleanup operations         |
 | **Implicit Call**     | Automatically called when an object is created | Automatically called when an object is destroyed |
 
-### Examples in C++:
+### Comparing **Default**, **Parameterized**, and **Copy Constructors** in C++:
+
+| **Feature**                   | **Default Constructor**                                  | **Parameterized Constructor**                         | **Copy Constructor**                                    |
+|-------------------------------|----------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------|
+| **Definition**                 | A constructor that takes no arguments                    | A constructor that takes one or more arguments        | A constructor that creates a copy of an existing object  |
+| **Syntax**                     | `ClassName();`                                           | `ClassName(type arg1, type arg2, ...);`               | `ClassName(const ClassName &obj);`                       |
+| **Purpose**                    | Initializes members with default values                  | Initializes members with custom values                | Creates a new object as a copy of an existing object     |
+| **Call Scenario**              | Called when an object is created without parameters       | Called when an object is created with specific values | Called when an object is copied (e.g., passing by value) |
+| **Implicit Creation**          | Automatically provided if no constructors are defined    | Must be explicitly defined by the programmer          | Automatically provided unless overridden                 |
+| **Overloading**                | Cannot be overloaded                                     | Can be overloaded with multiple parameter sets        | Cannot be overloaded                                     |
+| **Example**                    | `Rectangle r1;`                                          | `Rectangle r2(5, 10);`                                | `Rectangle r3 = r2;`                                     |
+| **When Used**                  | When an object doesn't need specific initialization       | When custom values need to be passed during object creation | When making a copy of an existing object                |
+| **Default Parameters**         | Does not accept parameters                               | Accepts parameters                                   | Accepts one argument: a reference to another object      |
 
 
 ## Defining the constructor inside the class:
